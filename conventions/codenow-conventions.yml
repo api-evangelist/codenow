@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source:
+  - https://docs.codenow.com/api/overview/authentication/
+  - https://docs.codenow.com/api/overview/api-versions/
+  - https://docs.codenow.com/api/overview/rate-limitation/
+authentication:
+  style: api-key-header
+  header: X-Codenow-Api-Key
+  also: OAuth 2.0 for the MCP server
+  see: authentication/codenow-authentication.yml
+versioning:
+  style: media-type (Accept header)
+  media_type: application/vnd.codenow.vX+json
+  current: application/vnd.codenow.v1+json
+  see: lifecycle/codenow-lifecycle.yml
+content_negotiation:
+  request_media_type: application/vnd.codenow.v1+json
+  detail: Version and representation are negotiated through the Accept media type.
+rate_limit_signaling:
+  headers: [x-ratelimit-limit, x-ratelimit-remaining, x-ratelimit-reset]
+  exceeded_status: 429
+  retry_guidance: exponential backoff
+  see: rate-limits/codenow-rate-limits.yml
+idempotency:
+  supported: unknown
+  note: No idempotency-key mechanism is documented in the public API overview.
+pagination:
+  style: unknown
+  note: Not documented in the public API overview pages reviewed.
+error_envelope:
+  format: unknown
+  note: No public OpenAPI or error reference found to capture the error envelope shape.
+request_tracing:
+  header: unknown
+notes:
+  - No public OpenAPI/Swagger document was located; conventions captured from the published API overview pages only.

@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.codenow.com/en/blog
+scheme: product-release (MAJOR.MINOR, e.g. 7.18)
+current_version: '7.18'
+docs: https://www.codenow.com/en/blog
+entries:
+  - version: '7.18'
+    date: '2026-05-15'
+    url: https://www.codenow.com/blog/release-notes-codenow-7-18---may-2026
+    breaking: false
+    highlights:
+      - Account-wide labels for all resource types (applications, components, libraries, containers, deployments, environments, packages, builds, managed services) with bulk tagging and color coding.
+      - Simultaneous deployment to multiple environments with per-environment status tracking.
+      - New official CodeNOW MCP server wrapping the CodeNOW API for AI assistants and agents, with full API coverage and read/write tools.
+  - version: '7.17'
+    date: '2026-02-17'
+    url: https://www.codenow.com/blog/release-notes-codenow-7-17---february-2026
+    breaking: false
+    highlights: []

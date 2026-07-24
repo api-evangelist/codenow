@@ -1,7 +1,18 @@
 aid: codenow
-name: Codenow
-description: Codenow is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: CodeNOW
+description: >-
+  CodeNOW is a Prague-based governance and execution platform for AI-scale
+  software delivery — a control plane that determines how software moves through
+  the SDLC regardless of whether a human or an AI agent wrote it. Founded by an
+  ex-IBM team, CodeNOW provides a governed execution layer that enforces
+  organizational policies and standards across human and non-human actors,
+  making every action auditable, stoppable, and structurally controlled. The
+  platform manages applications, components, containers, libraries, builds,
+  releases, deployments, environments and Kubernetes clusters, and is available
+  in cloud, on-premises, and air-gapped deployments. It exposes a versioned REST
+  API (media-type versioning) authenticated with an API key, plus an official
+  Model Context Protocol (MCP) server that wraps the API so AI assistants and
+  agents can operate the platform directly.
 url: https://raw.githubusercontent.com/api-evangelist/codenow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +20,112 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.codenow.com/img/CN-icon-40x42px-dark-forwhite-bg.png
 tags:
 - Company
-apis: []
+- DevOps
+- Software Delivery
+- Platform Engineering
+- Governance
+- AI Agents
+- CI/CD
+- Deployment
+- Kubernetes
+- Model Context Protocol
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: CodeNOW API
+  description: >-
+    Versioned REST API for the CodeNOW platform covering applications,
+    components, containers, libraries, builds, releases, triggers, deployments,
+    environments, clusters, managed services, labels, teams and CI pipelines.
+    Authenticated with the X-Codenow-Api-Key header; version negotiated via the
+    Accept media type application/vnd.codenow.v1+json.
+  humanURL: https://docs.codenow.com/
+  baseURL: https://api.codenow.com/
+  tags:
+  - DevOps
+  - Deployment
+  - CI/CD
+  properties:
+  - type: Documentation
+    url: https://docs.codenow.com/
+  - type: APIReference
+    url: https://docs.codenow.com/category/application/vnd.codenow.v1+json
+  - type: Authentication
+    url: authentication/codenow-authentication.yml
+  - type: RateLimits
+    url: rate-limits/codenow-rate-limits.yml
+  - type: MCPServer
+    url: mcp/codenow-mcp.yml
+common:
+- type: DeveloperPortal
+  url: https://docs.codenow.com/
+- type: Documentation
+  url: https://docs.codenow.com/
+- type: APIReference
+  url: https://docs.codenow.com/category/application/vnd.codenow.v1+json
+- type: GettingStarted
+  url: https://docs.codenow.com/manuals
+- type: Authentication
+  url: authentication/codenow-authentication.yml
+- type: MCPServer
+  url: mcp/codenow-mcp.yml
+- type: RateLimits
+  url: rate-limits/codenow-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/codenow-lifecycle.yml
+- type: StatusPage
+  url: https://status.codenow.com/
+- type: Roadmap
+  url: https://www.codenow.com/en/product/roadmap
+- type: ChangeLog
+  url: changelog/codenow-changelog.yml
+- type: Conventions
+  url: conventions/codenow-conventions.yml
+- type: Conformance
+  url: conformance/codenow-conformance.yml
+- type: DataModel
+  url: data-model/codenow-data-model.yml
+- type: DomainSecurity
+  url: security/codenow-domain-security.yml
+- type: LLMsTxt
+  url: llms/codenow-llms.txt
+- type: Blog
+  url: https://www.codenow.com/en/blog
+- type: Support
+  url: https://support.codenow.com/
+- type: Community
+  url: https://discord.gg/mjtQeHYFvJ
+- type: SignUp
+  url: https://cloud.codenow.com
+- type: Login
+  url: https://cloud.codenow.com
+- type: TermsOfService
+  url: https://www.codenow.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.codenow.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

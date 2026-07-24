@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://docs.codenow.com/api/overview/mcp-server/
+server:
+  name: codenow
+  transport: http
+  url: https://mcp.cloud.codenow.com/mcp
+  authentication:
+    - method: oauth2
+      recommended: true
+      detail: Browser-based OAuth 2.0 login with JWT token refresh.
+    - method: apiKey
+      header: X-Codenow-Api-Key
+  official: true
+  introduced: CodeNOW 7.18 (2026-05-15)
+capabilities:
+  - Query and manage applications, components, and deployments
+  - Trigger builds and deployments
+  - Inspect environment status and logs
+description: >-
+  Official Model Context Protocol server that wraps the CodeNOW REST API,
+  exposing CodeNOW platform operations as typed tools for AI assistants and
+  agents (including Claude). Provides full API coverage across applications,
+  components, deployments, and other platform entities, supporting both read
+  and write operations. Optimized for AI-driven workflows, complementing the
+  REST API which targets traditional integrations and automation scripts.
+tools: []
+tools_note: >-
+  Individual tool names are not enumerated in the published documentation; tools
+  are discovered at runtime via the MCP tool-discovery mechanism. Not fabricated
+  here.

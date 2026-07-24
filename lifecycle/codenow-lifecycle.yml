@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source:
+  - https://docs.codenow.com/api/overview/api-versions/
+  - https://status.codenow.com/
+  - https://www.codenow.com/en/product/roadmap
+versioning:
+  scheme: media-type
+  detail: >-
+    API version is negotiated via the Accept header using the media type
+    application/vnd.codenow.vX+json (content-type / MIME versioning), not URI
+    paths.
+  current: v1
+  current_media_type: application/vnd.codenow.v1+json
+  docs: https://docs.codenow.com/api/overview/api-versions/
+  policy: >-
+    Breaking changes (removing operations, renaming parameters, adding required
+    parameters) trigger a new major version. Non-breaking additions (optional
+    parameters, new operations, new response fields) are applied within the
+    existing version. Forward compatibility keeps older-version clients working.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No explicit deprecation timeline or Sunset/Deprecation (RFC 8594) header
+    support is documented; the vendor states older versions remain functional
+    under its forward-compatibility commitment.
+sla:
+  url: null
+status_page: https://status.codenow.com/
+roadmap: https://www.codenow.com/en/product/roadmap
+deprecated_operations: []

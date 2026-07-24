@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.codenow.com/api/overview/rate-limitation/
+rate_limits:
+  - scope: per-client
+    limit_count: 100
+    window: 60
+    window_unit: seconds
+    description: 100 requests per minute per client.
+    exceeded_status: 429
+    exceeded_behavior: >-
+      HTTP 429 Too Many Requests. Docs advise an exponential backoff retry
+      strategy.
+headers:
+  - name: x-ratelimit-limit
+    description: Maximum allowed requests in the window (100).
+  - name: x-ratelimit-remaining
+    description: Remaining requests the client can make in the current window.
+  - name: x-ratelimit-reset
+    description: Time in seconds until the rate limit resets.

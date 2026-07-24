@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source:
+  - https://docs.codenow.com/api/overview/authentication/
+  - https://docs.codenow.com/api/overview/mcp-server/
+  - https://docs.codenow.com/api/overview/api-versions/
+  - https://docs.codenow.com/api/overview/rate-limitation/
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: OAuth 2.0 (authorization code, JWT refresh) documented for the CodeNOW MCP server.
+  - id: api-key-auth
+    conforms: true
+    evidence: X-Codenow-Api-Key header authentication documented for the REST API.
+  - id: mcp
+    conforms: true
+    evidence: Official hosted Model Context Protocol server at https://mcp.cloud.codenow.com/mcp (HTTP transport).
+  - id: media-type-versioning
+    conforms: true
+    evidence: API versioning via Accept media type application/vnd.codenow.vX+json.
+  - id: rate-limiting
+    conforms: true
+    evidence: x-ratelimit-limit/-remaining/-reset headers and HTTP 429 on limit exceeded.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No error envelope / problem+json documented publicly.
+  - id: rfc8594-sunset
+    conforms: false
+    evidence: No Sunset/Deprecation header support documented.
+notes:
+  - No published compliance certifications (SOC 2, ISO 27001, PCI DSS, HIPAA, FedRAMP) were found on the public site or docs; no Compliance pointer is emitted.

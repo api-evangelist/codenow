@@ -1,0 +1,33 @@
+# CodeNOW
+
+> CodeNOW is the governed execution layer for AI-powered software delivery — making every action auditable, stoppable, and structurally controlled.
+
+## Product
+
+- [Product Overview](https://www.codenow.com/product)
+- [Integrations](https://www.codenow.com/en/integrations)
+- [Extensions](https://www.codenow.com/en/extensions)
+- [Case Studies](https://www.codenow.com/en/product/case-studies)
+- [Roadmap](https://www.codenow.com/en/product/roadmap)
+
+## Solutions
+
+- [Solutions Overview](https://www.codenow.com/en/solutions)
+- [For Enterprise](https://www.codenow.com/en/benefits/enterprise)
+- [For Business Leaders](https://www.codenow.com/en/benefits/business-leaders)
+- [For Engineering Leaders](https://www.codenow.com/en/benefits/engineering-leaders)
+
+## Documentation
+
+- [Docs](https://docs.codenow.com/)
+- [Support](https://support.codenow.com/)
+
+## Blog
+
+- [Blog](https://www.codenow.com/en/blog)
+
+## Company
+
+- [About](https://www.codenow.com/en/about)
+- [Careers](https://www.codenow.com/en/careers)
+- [Book a Conversation](https://www.codenow.com/en/book)

@@ -1,0 +1,88 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.codenow.com/category/application/vnd.codenow.v1+json
+note: >-
+  Entity graph captured from the published CodeNOW REST API reference resource
+  listing. No public OpenAPI document was available to derive $ref links
+  mechanically; relationships reflect the documented resource hierarchy.
+entities:
+  - name: Application
+    description: Core organizational unit grouping components, deployments and packages.
+  - name: ApplicationComponent
+    description: Building block within an application (a deployable service/module).
+  - name: Container
+    description: Standalone container-managed workload.
+  - name: Library
+    description: Reusable code library.
+  - name: Build
+    description: A build of a component/container/library.
+  - name: Release
+    description: A release produced from a build.
+  - name: Trigger
+    description: CI trigger configuration.
+  - name: Deployment
+    description: A deployment of application artifacts to environments.
+  - name: DeploymentConfig
+    description: Configuration for a deployment.
+  - name: Package
+    description: Packaged application artifact.
+  - name: Environment
+    description: Named deployment target (dev/staging/production) within a cluster.
+  - name: Cluster
+    description: Kubernetes cluster (Dataplane) providing compute for environments.
+  - name: ManagedService
+    description: Managed backing service (e.g. datastore) provisioned by CodeNOW.
+  - name: Label
+    description: Account-wide label attachable to most resource types.
+  - name: Team
+    description: Group of users with access to resources.
+  - name: User
+    description: A CodeNOW user; API key permissions inherit user RBAC.
+  - name: ScmProvider
+    description: Source-control-management provider connection.
+  - name: GitSshKey
+    description: Git SSH key for repository access.
+  - name: Template
+    description: Reusable scaffolding template.
+  - name: CiPipeline
+    description: CI pipeline definition.
+  - name: CiWebhook
+    description: CI webhook configuration (inbound SCM/CI triggers).
+relationships:
+  - from: Application
+    to: ApplicationComponent
+    type: has_many
+  - from: Application
+    to: Deployment
+    type: has_many
+  - from: Application
+    to: Package
+    type: has_many
+  - from: Application
+    to: DeploymentConfig
+    type: has_many
+  - from: ApplicationComponent
+    to: Build
+    type: has_many
+  - from: ApplicationComponent
+    to: Release
+    type: has_many
+  - from: ApplicationComponent
+    to: Trigger
+    type: has_many
+  - from: Container
+    to: Build
+    type: has_many
+  - from: Library
+    to: Build
+    type: has_many
+  - from: Cluster
+    to: Environment
+    type: has_many
+  - from: Deployment
+    to: Environment
+    type: has_many
+    via: target-environments
+  - from: Team
+    to: User
+    type: has_many
