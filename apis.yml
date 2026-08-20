@@ -46,6 +46,17 @@ tags:
 - CI/CD
 - Deployment
 - Kubernetes
+- MCP
+tags_raw:
+- Company
+- DevOps
+- Software Delivery
+- Platform Engineering
+- Governance
+- AI Agents
+- CI/CD
+- Deployment
+- Kubernetes
 - Model Context Protocol
 maintainers:
 - FN: Kin Lane
