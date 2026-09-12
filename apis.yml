@@ -100,6 +100,8 @@ apis:
   - type: MCPServer
     url: mcp/codenow-mcp.yml
 common:
+- type: Website
+  url: https://www.codenow.com/
 - type: DeveloperPortal
   url: https://docs.codenow.com/
 - type: Documentation
