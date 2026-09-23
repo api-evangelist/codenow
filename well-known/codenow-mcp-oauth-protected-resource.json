@@ -1,0 +1,1 @@
+{"resource":"https://mcp.cloud.codenow.com/mcp","authorization_servers":["https://iam.cloud.codenow.com/auth/realms/codenow"],"scopes_supported":["openid"],"client_id":"codenow-api-mcp"}
