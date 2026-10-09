@@ -33,3 +33,16 @@ deployment:
   probe: gated
   checked: '2026-08-12'
   source: catalog MCP census
+rfc9728:
+  endpoint: https://mcp.cloud.codenow.com/mcp
+  metadata_url: https://mcp.cloud.codenow.com/.well-known/oauth-protected-resource
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://mcp.cloud.codenow.com/mcp
+    authorization_servers:
+    - https://iam.cloud.codenow.com/auth/realms/codenow
+    scopes_supported:
+    - openid
